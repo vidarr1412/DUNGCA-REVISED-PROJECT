@@ -17,7 +17,7 @@
             <a href="dung.php">Home</a>
             <a href="about.php">About Me</a>
             <a href="services.php">Services</a>
-            <a href="skills.php">Skills</a>
+            <!-- <a href="skills.php">Skills</a> -->
             <a href="education.php">Education</a>
             <a href="contact.php" class="active">Contact</a>
             <a href="logout.php" class="logout-btn"><i class='bx bxs-log-out'></i> Logout</a>
