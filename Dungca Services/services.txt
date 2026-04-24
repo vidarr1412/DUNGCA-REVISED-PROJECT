@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dungca.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <title>Services</title>
+</head>
+<body>
+    <header class="header">
+      <a href="#" class="logo">Cuddle Cup Coffee</a>
+          <nav class="navbar">
+              <a href="dung.php">Home</a>
+              <a href="about.php">About me</a>
+              <a href="services.php" class="active">Services</a>
+              <a href="yes.php">Skills</a>
+              <a href="education.php">Education</a>
+              <a href="contact.php">Contact</a>
+              <a href="logout.php" class="logout-btn"><i class='bx bxs-log-out'></i>Logout</a>
+          </nav>
+    </header>
+
+    <section class="services-page">
+        <div class="text-content">
+            <div class="inner">
+                <div class="header-two">
+                    <h1>My Services</h1>
+                </div>
+            </div>
+            <div class="container services-container">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <i class='bx bxs-paint'></i>
+                            <h3>Graphic Designing</h3>
+                        </div>
+                    </div>
+                    <p>Professional graphic design services including logo creation, branding materials, and
+                    visual identity design. I specialize in creating visually stunning designs that effectively
+                    communicate your message and brand identity.</p>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <i class='bx bxs-edit'></i>
+                            <h3>Digital Art Editing</h3>
+                        </div>
+                    </div>
+                    <p>Expert digital artwork editing and enhancement services using industry-standard tools
+                    like Adobe Photoshop. I can enhance, retouch, and transform your digital images to create
+                    stunning visual content.</p>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <i class='bx bxs-folder'></i>
+                            <h3>Visual Content Creation</h3>
+                        </div>
+                    </div>
+                    <p>Create compelling visual content for social media, website, and marketing campaigns.
+                    From custom illustrations to photo compositions, I deliver high-quality visuals that
+                    capture attention and drive engangement.</p>
+                </div>
+            </div>
+        </div>
+
+        <span class="home-imgHover"></span>
+    </section>
+
+    <script>
+        //Check if user is logged in
+        window.addEventListener('DOMContentLoaded', function(){
+            const currentUser = localStorage.getItem('currentUser');
+            if (!currentUser){
+                window.location.href = 'services.php';
+            }
+        });
+
+        function handleLogout(event){
+            event.preventDefault();
+            localStorage.removeItem('currentUser');
+            localStorage.removeItem('rememberedUser');
+            window.location.href = 'login.php';
+        }
+    </script>
+</body>
+</html>

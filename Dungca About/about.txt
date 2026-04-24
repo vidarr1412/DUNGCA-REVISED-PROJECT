@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dungca.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <title>About Me</title>
+</head>
+<body>
+    <header class="header">
+      <a href="#" class="logo">COFFEE PALDO</a>
+          <nav class="navbar">
+              <a href="dung.php">Home</a>
+              <a href="about.php" class="active">About me</a>
+              <a href="services.php">Services</a>
+              <a href="skills.php">Skills</a>
+              <a href="education.php">Education</a>
+              <a href="contact.php">Contact</a>
+              <a href="logout.php" class="logout-btn"><i class='bx bxs-log-out'></i>Logout</a>
+          </nav>
+    </header>
+
+    <section class="about-page">
+        <div class="text-content">
+            <div class="inner">
+                <div class="header-two">
+                    <h1>About Me</h1>
+                </div>
+            </div>
+            <div class="container about-container">
+                <div class="about-box">
+                    <h2>Who I am</h2>
+                    <p>Hello! I'm Carlo Paculba Dungca, an amateur graphic designer with a passion for creating
+                    visually stunning and impactful designs. I'm currently honing my skills in graphic design and
+                    digital art creation, with a particular focus on Photoshop and digital artwork editing.</p>
+                </div>
+
+                <div class="about-box">
+                    <h2>My Journey</h2>
+                    <p>I started my journey into graphic design driven by a strong desire to bring creative
+                    concepts to life. As someone who is continously learning and evolving, I'm commited to
+                    developing my craft and staying updated with the latest design trends and technique</p>
+                </div>
+
+                <div class="about-box">
+                    <h2>What Drives Me</h2>
+                    <p>I'm passionate about creating designs that not only look beautiful but also communicate
+                    messages effectively. I believe in the power of visual communication and strive to make every
+                    project I work on meaningful.</p>
+                </div>
+
+                <div class="about-box">
+                    <h2>Let's Connect</h2>
+                    <p>I'm always excited to work with others and bring creative visions to life. Whether you have
+                    a project in mind or just want to connect and discuss design, feel free to reach out on
+                    social media or through the contact page.</p>   
+                </div>
+
+                <div class="about-box">
+                    <h1>Work Experience</h1>
+                    <p>While I may not have formal work experience in the graphic design industry, my dedication to learning and improving my skills has allowed me to create a portfolio of personal projects and freelance work. I have completed various design projects for friends, family, and local businesses, which has given me valuable hands-on experience in understanding client needs, managing deadlines, and delivering high-quality designs.</p>
+                    <a href="https://www.facebook.com/carlo.dungca"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/carlo.dungca"><i class='bx bxl-instagram'></i></a>
+                </div>
+
+                    
+            </div>
+        </div>
+
+        <span class="home-imgHover"></span>
+    </section>
+
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
+
+    <script>
+        //Check if user is logged in
+        window.addEventListener('DOMContentLoaded', function () {
+            const currentUser = localStorage.getItem('currentUser');
+            if (!currentUser) {
+                window.location.href = 'login.php';
+            }
+        });
+
+        function handleLogout(event) {
+            event.preventDefault ();
+            localStorage.removeItem('currentUser');
+            localStorage.removeItem('rememberedUser');
+            window.location.href = 'login.php';
+        }
+
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        };
+    </script>
+</body>
+</html>

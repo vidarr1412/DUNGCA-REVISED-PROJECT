@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dungca.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel= 'stylesheet'>
+    <title>Dungca Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">COFFEE PALDO</a>
+             <nav class="navbar">
+                <a href="dung.php">Home</a>
+                <a href="about.php">About Me</a>
+                <a href="services.php">Services</a> 
+                <a href="yes.php" class="active">Skills</a>
+                <a href="education.php">Education</a>
+                <a href="contact.php">Contact</a>
+                <a href="logout.php" class="logout-btn"><i class='bx bxs-log-out'></i>Logout</a>
+             </nav>
+    </header>
+    <section class="skills-page">
+        <div class="text-content">
+            <div class="inner">
+                <div class="header-two">
+                    <h1>My Skills</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <i class='bx bxs-paint'></i>
+                            <h3>Carlo P. Dungca</h3>
+                        </div>
+                    </div>
+                    <p>Throughout my learning journey, I have developed a strong foundation in both technical and personal skills 
+                        that allow me to create efficient, creative, and user-friendly projects. I have experience in front-end web
+                         development using HTML, CSS, and JavaScript, which enables me to design responsive and visually appealing websites.</p>
+                </div>
+            </div>
+        </div>
+        <span class="home-imgHover"></span>  
+    </section>
+</body>
+</html>

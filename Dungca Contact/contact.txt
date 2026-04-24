@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dungca.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <title>Contact - Dungca Portfolio</title>
+</head>
+<body>
+    <header class="header">
+      <a href="#" class="logo">COFFEE PALDO</a>
+            <nav class="navbar">
+                <a href="dung.php">Home</a>
+                <a href="about.php">About Me</a>
+                <a href="services.php">Services</a>
+                <a href="yes.php">Skills</a>
+                <a href="education.php">Education</a>
+                <a href="contact.php" class="active">Contact</a>
+                <a href="logout.php" class="logout-btn"><i class='bx bxs-log-out'></i>Logout</a>
+            </nav>
+    </header>
+
+    <section class="contact-page">
+        <div class="text-content">
+            <h1>Get In Touch!</h1>
+            <h3>Contact COFFEE PALDO</h3>
+            <p>Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+            
+            <div class="contact-info">
+                <div class="info-item">
+                    <h4><i class='bx bxs-phone'></i> Phone</h4>
+                    <p>09525503565</p>
+                </div>
+
+                <div class="info-item">
+                    <h4><i class='bx bxs-envelope'></i> Email</h4>
+                    <p>dungcacarlo285@gmail.com</p>
+                </div>    
+
+                <div class="info-item">
+                    <h4><i class='bx bxs-map'></i> Location</h4>
+                    <p>Brgy. Mat-i, Surigao City, Surigao Del Norte</p>
+                </div>
+            </div>   
+        </div>
+
+        <div class="home-sci">
+            <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+        </div>
+        
+      <span class="home-imgHover"></span>
+    </section>
+
+    <section class="contact-form-section">
+        <h2>Send us a Message.</h2>
+
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter Number">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Tell us more.." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 COFFEE PALDO All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
